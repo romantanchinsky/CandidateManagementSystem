@@ -1,0 +1,35 @@
+@url = http://localhost:5163/WorkingGroup
+@token = eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhMTAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDAiLCJ1c2VyUm9sZSI6IkFkbWluIiwid29ya2luZ0dyb3VwSWQiOiIiLCJqdGkiOiI0OGRlYWQyOS02ZDU2LTQ3OGQtYjI3NC1mNmJlNTZiZjJmYWEiLCJuYmYiOjE3NTk4ODg4NzEsImV4cCI6MTc1OTg5MjQ3MSwiaWF0IjoxNzU5ODg4ODcxLCJpc3MiOiJDYW5kaWRhdGVNYW5hZ2VtZW50IiwiYXVkIjoiQ2FuZGlkYXRlTWFuYWdlbWVudCJ9._O_BgrigFQIDv2J_D_xGsfbQMFBkhUE2jBOEflOjZRMZGboi2Ox3JLVjAIjFn8MO2tM7cLOptuZzM24BSolYgA
+
+POST {{url}}
+Content-Type: application/json
+Authorization: bearer {{token}}
+
+{
+    "name": "groupOneOne"
+}
+
+###
+GET {{url}}/c1000000-0000-0000-0000-000000000000
+Accept: application/json
+Authorization: bearer {{token}}
+
+###
+GET {{url}}/c2000000-0000-0000-0000-000000000000
+Accept: application/json18283aad-83c7-4f96-b91d-3d4ca918da50
+Authorization: bearer {{token}}
+
+
+###
+PUT {{url}}/c2000000-0000-0000-0000-000000000000/participants
+Content-Type: application/json
+Authorization: bearer {{token}}
+
+{
+    "userIds":
+    [
+        "b3000000-0000-0000-0000-000000000000",
+        "b4000000-0000-0000-0000-000000000000"
+
+    ]
+}

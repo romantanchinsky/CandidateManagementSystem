@@ -1,0 +1,46 @@
+@url = http://localhost:5163/auth
+
+POST {{url}}/login
+Content-Type: application/json
+
+{
+    "login": "Admin",
+    "password": "Admin"
+}
+
+###
+
+POST {{url}}/login
+Content-Type: application/json
+
+{
+    "login": "hr1login",
+    "password": "hr1Password"
+}
+
+###
+POST {{url}}/refresh
+Content-Type: application/json
+
+{
+  "accessToken": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJkYThmYmQwYy0yMDg3LTQ5MWMtOTllYS00ODkyZmVjYmYwODciLCJ1c2VyUm9sZSI6IkhSIiwid29ya2luZ0dyb3VwSWQiOiJkYThmYmQwYy0zMDg3LTQ5MWMtOTllYS00ODkyZmVjYmYwODciLCJqdGkiOiJkOTEwZDgxZS01OTg3LTQwZTYtOTE3OC1mODYwMzk1OTJlODQiLCJuYmYiOjE3NTk4NTgzNTMsImV4cCI6MTc1OTg2MTk1MywiaWF0IjoxNzU5ODU4MzUzLCJpc3MiOiJDYW5kaWRhdGVNYW5hZ2VtZW50IiwiYXVkIjoiQ2FuZGlkYXRlTWFuYWdlbWVudCJ9.sLNk8LY1Muiq3mFaLfYSIIUkgOlp2PCPLNbJSVrCo_wY1RxUzYXYBbsZpNlbcAz-RgXGjcctxEOfFwB4uAT8aw",
+  "refreshToken": "/R0PaFL5VsTRXmVfAQ2uDyU7mGWN4fq1BoukjS927+A="
+}
+
+###
+POST {{url}}/logout
+Content-Type: application/json
+
+{
+    "refreshToken": "pojXLB7loB3AKaI83dh4I9Jn79hJuuQ6fXI/uFHvNr0="
+}
+
+###
+
+POST {{url}}/login
+Content-Type: application/json
+
+{
+    "login": "hrlogin",
+    "password": "hrPassword"
+}

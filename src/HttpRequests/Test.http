@@ -1,0 +1,25 @@
+@HostAddress = http://localhost:5163
+
+GET {{HostAddress}}/test/isitalive
+Accept: application/json
+
+###
+POST {{HostAddress}}/test/createuser
+Content-Type: application/json
+
+###
+GET {{HostAddress}}/test/getusers
+Accept: application/json
+
+###
+GET  {{HostAddress}}/test
+Content-Type: application/json
+
+###
+Get {{HostAddress}}/test/CurrentUser
+Accept: application/json
+Authorization: bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhNThiYmI1YS1iMTA3LTRhNTUtYWU4OC03MDAwMDRhNjBkYjQiLCJ1c2VyUm9sZSI6IkhSIiwid29ya2luZ0dyb3VwSWQiOiIiLCJqdGkiOiJiNDBjZmJlNy04MjYwLTQ0NjEtOGRmZi04MmYzNzBhYzgzOWYiLCJuYmYiOjE3NTk2NjUzNzUsImV4cCI6MTc1OTY2NTY3NSwiaWF0IjoxNzU5NjY1Mzc1LCJpc3MiOiJDYW5kaWRhdGVNYW5hZ2VtZW50IiwiYXVkIjoiQ2FuZGlkYXRlTWFuYWdlbWVudCJ9.nbowDtxwuNKsXncKhqA4VZ7MDKZ5mybk34-KqNDltaDE94BtqXoqtKPhScV8EYXEFi0MljiC5PHM4hV7yWHrNg
+
+###
+GET {{HostAddress}}/health
+Accept: application/json

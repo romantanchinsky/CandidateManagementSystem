@@ -1,0 +1,17 @@
+@url = http://localhost:5163/Verification
+
+@token = eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhMTAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDAiLCJ1c2VyUm9sZSI6IkFkbWluIiwid29ya2luZ0dyb3VwSWQiOiIiLCJqdGkiOiIxZTJjYmZiYS1iYTg1LTQ0ZTktOGEyYi02MDg2NWJiNzgyN2IiLCJuYmYiOjE3NTk5MDIwODksImV4cCI6MTc1OTkwNTY4OSwiaWF0IjoxNzU5OTAyMDg5LCJpc3MiOiJDYW5kaWRhdGVNYW5hZ2VtZW50IiwiYXVkIjoiQ2FuZGlkYXRlTWFuYWdlbWVudCJ9.UkCk9BNcAJfBy9jYRQLYifdfxPI7fJpWTKqhLKQMwe96iGT_jdnD9KjpKZwB3hPqpFX40A5iuhrqh4P5IDmuLA
+
+
+POST {{url}}/start
+Content-Type: application/json
+Authorization: bearer {{token}}
+
+{
+  "fullName": "candidate1Firstname candidate1LastName candidate1Patronymic"
+}
+
+###
+GET {{url}}/31cbc51f-c168-437a-be05-00e2c3dff9ba/results
+Content-Type: application/json
+Authorization: bearer {{token}}

@@ -1,0 +1,73 @@
+@url = http://localhost:5163/candidate
+
+@token = eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJiMTAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDAiLCJ1c2VyUm9sZSI6IkhSIiwid29ya2luZ0dyb3VwSWQiOiJjMTAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDAiLCJqdGkiOiI0MGZkOTk3YS0yNmQ5LTRlYzItODFjMi03NmQ5ZGFkN2IwMGUiLCJuYmYiOjE3NTk4OTMwOTEsImV4cCI6MTc1OTg5NjY5MSwiaWF0IjoxNzU5ODkzMDkxLCJpc3MiOiJDYW5kaWRhdGVNYW5hZ2VtZW50IiwiYXVkIjoiQ2FuZGlkYXRlTWFuYWdlbWVudCJ9.qyenECPLn8Vaqc24awG61N8ecL8kNqPluJZ9Jj8JCpAiZGPDOI1Waql1ssuLOqD6ffB71KcQ8ZJzDeCKrjfb6A
+
+POST {{url}}
+Content-Type: application/json
+Authorization: bearer {{token}}
+
+
+{
+    
+    "firstName": "CandidateFristName",
+    "lastName": "CandidateLastName",
+    "patronymic": "CandidatePatronymic",
+    "email": "romantanchynski@gmail.com",
+    "phoneNumber": "1234567",
+    "country": "Krasivsk",
+    "dateOfBirth": "2025-10-05T20:01:00Z",
+    "socialNetworks":
+    [
+        {
+            "username": "username",
+            "type": "type"
+        }
+    ],
+    "WorkSchedule": "Remote",
+    "workingGroupId": "c1000000-0000-0000-0000-000000000000",
+    "createdById": "b1000000-0000-0000-0000-000000000000"
+}
+
+###
+GET {{url}}/d5000000-0000-0000-0000-000000000000
+Content-Type: application/json
+Authorization: bearer {{token}}
+
+###
+GET {{url}}/866a398b-9eda-4a93-90a1-d21de72c05a6
+Content-Type: application/json
+Authorization: bearer {{token}}
+
+
+###
+PUT {{url}}/d6000000-0000-0000-0000-000000000000
+Content-Type: application/json
+Authorization: bearer {{token}}
+
+{
+    
+    "firstName": "CandidateFristName",
+    "lastName": "CandidateLastName",
+    "email":"romantanchynski@gmail.com",
+    "phoneNumber": "1234567",
+    "country": "Krasivsk",
+    "dateOfBirth": "2025-10-05T20:01:00Z",
+    "WorkSchedule": "Office",
+    "socialNetworks":
+    [
+        {
+            "username": "username",
+            "type": "type"
+        }
+    ]
+}
+
+###
+GET {{url}}?PageNumber=1&PageSize=20&WorkScheduleFilter=Hybrid
+Content-Type: application/json
+Authorization: bearer {{token}}
+
+###
+GET {{url}}/7d6f868a-7249-45b5-8a94-a9e0b443ef18
+Content-Type: application/json
+Authorization: bearer {{token}}

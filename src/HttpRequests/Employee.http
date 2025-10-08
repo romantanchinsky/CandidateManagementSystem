@@ -1,0 +1,15 @@
+@url = http://localhost:5163/Employee
+@token = eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJiMTAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDAiLCJ1c2VyUm9sZSI6IkhSIiwid29ya2luZ0dyb3VwSWQiOiJjMTAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDAiLCJqdGkiOiI0ZTFkMzVjNy00YTViLTRmYTYtYTUwMC1iZjI3YWI0ZWEwZGIiLCJuYmYiOjE3NTk4OTA4NTUsImV4cCI6MTc1OTg5NDQ1NSwiaWF0IjoxNzU5ODkwODU1LCJpc3MiOiJDYW5kaWRhdGVNYW5hZ2VtZW50IiwiYXVkIjoiQ2FuZGlkYXRlTWFuYWdlbWVudCJ9.sA9Dt6swyFdwQ2G6Ml8lv8elPBO7lyUUlK5nw68oktHFqO4gAdqGD7Xr3iqgTlMkZUUfBWYh_nirqwt72XNbXA
+###
+GET {{url}}/f34e32b8-d28b-433f-a337-ac8063037c10
+Content-Type: application/json
+Authorization: bearer {{token}}
+
+###
+POST {{url}}
+Content-Type: application/json
+Authorization: bearer {{token}}
+
+{
+    "candidateId": "d2000000-0000-0000-0000-000000000000"
+}

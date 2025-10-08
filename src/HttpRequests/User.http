@@ -1,0 +1,24 @@
+@url = http://localhost:5163/user
+@token = eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhMmUzNTBjYi1kYTlmLTQ3ZWMtOTI4Yy1hMWFhZjljMjRhYTQiLCJ1c2VyUm9sZSI6IkFkbWluIiwid29ya2luZ0dyb3VwSWQiOiIiLCJqdGkiOiIxYjRiZTNlZS1lYjc0LTRjZTUtYjY2MS1iMTU1ZTA1M2IzOWUiLCJuYmYiOjE3NTk5MDUwNTgsImV4cCI6MTc1OTkwODY1OCwiaWF0IjoxNzU5OTA1MDU4LCJpc3MiOiJDYW5kaWRhdGVNYW5hZ2VtZW50IiwiYXVkIjoiQ2FuZGlkYXRlTWFuYWdlbWVudCJ9.3ObUeVG1WTU4sj85NW0jszcJ7wzR7M4Dz6AoP89vQrWsiC2DTe1BoXwRzryFjKhf4hbDk1RGeRVkmON_BPS-mA
+
+POST {{url}}/hr
+Content-Type: application/json
+Authorization: bearer {{token}}
+
+{
+    "firstName": "hrFristName",
+    "lastName": "hrLastName",
+    "login": "hrLogin1",
+    "password": "hrPassword"
+}
+
+###
+
+GET {{url}}/49f4c254-0e53-44f7-8beb-52694e6d2814
+Accept: application/json
+Authorization: bearer {{token}}
+
+### 
+GET {{url}}/hr
+Accept: application/json
+Authorization: bearer {{token}}
