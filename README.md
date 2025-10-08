@@ -1,6 +1,6 @@
 # Candidate Management System
 
-Backend API for HR candidate management process built with .NET 8
+Backend API for HR candidate management process built with .NET
 
 ## Project Description
 System for managing candidates, employees, and working groups with role-based access control.
